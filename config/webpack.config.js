@@ -713,7 +713,7 @@ module.exports = function (webpackEnv) {
         async: isEnvDevelopment,
         typescript: {
           typescriptPath: resolve.sync('typescript', {
-            basedir: paths.appNodeModules,
+            basedir: 'node_modules',
           }),
           configOverwrite: {
             compilerOptions: {
