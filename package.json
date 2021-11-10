@@ -2,11 +2,7 @@
   "name": "react-scripts",
   "version": "4.0.3",
   "description": "Configuration and scripts for Create React App.",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/facebook/create-react-app.git",
-    "directory": "packages/react-scripts"
-  },
+  "repository": "https://github.com/facebook/create-react-app.git",
   "license": "MIT",
   "engines": {
     "node": ">=14.0.0"
@@ -76,6 +72,7 @@
     "workbox-webpack-plugin": "^6.2.4"
   },
   "devDependencies": {
+    "circular-dependency-plugin": "^5.2.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
@@ -102,5 +99,7 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "main": "index.js",
+  "author": "Claudius Mbemba <mbembac@gmail.com>"
 }
