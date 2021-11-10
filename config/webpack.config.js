@@ -235,7 +235,13 @@ module.exports = function (webpackEnv) {
       level: 'none',
     },
     optimization: {
-      minimize: isEnvProduction,
+      // minimize: isEnvProduction,
+      minimize: false,
+      splitChunks: {
+        chunks: 'all',
+        name: true
+      },
+      runtimeChunk: true,
       minimizer: [
         // This is only used in production mode
         new TerserPlugin({
